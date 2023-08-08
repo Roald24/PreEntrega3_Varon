@@ -1,0 +1,39 @@
+#carrito {
+	background-color: #3ccc35;
+	border: 1px solid #3ccc35;
+	padding: 10px;
+	width: 150px; 
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 999; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #carrito h2 {
+	margin-bottom: 10px;
+	text-align: center;
+  }
+  
+  #carrito ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #carrito li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+  }
+  
+  #carrito li button {
+	background-color: #f44336;
+	color: white;
+	border: none;
+	padding: 4px 8px;
+	font-size: 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+  

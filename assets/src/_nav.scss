@@ -1,0 +1,40 @@
+%aling-center{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+    background: rgb(33, 0, 79);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+
+
+
+    &_menu{
+        @extend %aling-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+    }
+
+    &_links{
+        color: red;
+        @extend %aling-center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+
+        &:hover{
+            color: rgb(62, 248, 208);
+            transition: all 0.3s ease;
+        }
+    }
+
+
+
+}
