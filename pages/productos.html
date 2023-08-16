@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-	<link rel="shortcut icon" href="../assets/img/bluemoonicon.png" type="image/x-icon">
-    <title>Kuro Cannabis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/img/bluemoonicon.png" type="image/x-icon">
+    <title>Kuro Cannabis, Productos</title>
 </head>
+
 <body>
 
 
-  
 
 
-	<nav class="navbar">
-    
-		<a href="../assets/img/bluemoonicon.png" class="navbar_logo"></a>
-	
-		<div class="navbar_menu">
-		  <a href="../index.html" class="navbar_links">Inicio</a>
-		  <a href="#" class="navbar_links">Productos</a>
-		</div>
-	
-	</nav>
+
+    <nav class="navbar">
+
+        <a href="../assets/img/bluemoonicon.png" class="navbar_logo"></a>
+
+        <div class="navbar_menu">
+            <a href="../index.html" class="navbar_links">Inicio</a>
+            <a href="#" class="navbar_links">Productos</a>
+            <a href="./registro.html" class="navbar_links">Registro</a>
+        </div>
+    <!--
+        <div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    -->
+    </nav>
 
 
-   <div id="filtro">
-      <label for="filtro-seleccion">Filtrar por:</label>
-      <select id="filtro-seleccion">
-          <option value="todos">Todos los productos</option>
-          <option value="filtroNombre">Nombre del producto</option>
-          <option value="filtroPrecio">Por precio (menor a mayor)</option>
-      </select>
-      <button onclick="cambiarVistaProductos()">Aplicar Filtro</button>
+    <div id="filtro">
+        <label for="filtro-seleccion">Filtrar por:</label>
+        <select id="filtro-seleccion">
+            <option value="todos">Todos los productos</option>
+            <option value="filtroNombre">Nombre del producto</option>
+            <option value="filtroPrecio">Por precio (menor a mayor)</option>
+        </select>
+        <button onclick="cambiarVistaProductos()">Aplicar Filtro</button>
     </div>
 
 
@@ -45,11 +57,11 @@
     <h1>Productos disponibles</h1>
 
     <div id="productos">
-		<div class="producto">
-    		<img src="../assets/img/og-kush.jpg" alt="OG Kush">
-    		<p>OG Kush - $800</p>
-    		<button onclick="agregarAlCarrito('OG Kush', 800)">Agregar al Carrito</button>
-		</div>
+        <div class="producto">
+            <img src="../assets/img/og-kush.jpg" alt="OG Kush">
+            <p>OG Kush - $800</p>
+            <button onclick="agregarAlCarrito('OG Kush', 800)">Agregar al Carrito</button>
+        </div>
 
         <div class="producto">
             <img src="../assets/img/wedding_cake.jpg" alt="Wedding Cake">
@@ -76,16 +88,18 @@
 
 
 
-	  <div id="carrito">
-    	  <h2>Carrito de Compra</h2>
-    	  <ul id="carrito-lista">
-    	  </ul>
-    	  <p id="precio-total">Total: $0</p>
-    	  <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-	  </div>
 
-	</div>
-	<script src="productos.js"></script>
+    <div id="carrito">
+        <h2>Carrito de Compra</h2>
+        <ul id="carrito-lista">
+        </ul>
+        <p id="precio-total">Total: $0</p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+    </div>
+    <script src="../assets/js/productos.js"></script>
+    <script src="../assets/js/carrito.js"></script>
 </body>
 
 </html>

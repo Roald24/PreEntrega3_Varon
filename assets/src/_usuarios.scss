@@ -1,0 +1,16 @@
+#usuarios {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  width: 300px; 
+  max-height: 500px; 
+  overflow-y: auto; 
+  margin-left: 100px;
+
+  p {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ff0000;
+    font-size: 20px;
+  }
+}

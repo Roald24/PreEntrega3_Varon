@@ -184,3 +184,49 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0px auto;
+  background-color: rgb(60, 204, 7);
+}
+#formulario label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#formulario input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#formulario button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#formulario button:hover {
+  background-color: #0056b3;
+}
+
+#usuarios {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  width: 300px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-left: 100px;
+}
+#usuarios p {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #ff0000;
+  font-size: 20px;
+}
